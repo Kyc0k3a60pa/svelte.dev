@@ -1,14 +1,15 @@
 ---
-title: Your first component
+title: Ваш первый компонент
 ---
 
-In Svelte, an application is composed from one or more _components_. A component is a reusable self-contained block of code that encapsulates HTML, CSS and JavaScript that belong together, written into a `.svelte` file. The `App.svelte` file, open in the code editor to the right, is a simple component.
+В Svelte приложение состоит из одного или нескольких компонентов. Компонент — это повторно используемый автономный блок кода, который инкапсулирует HTML, CSS и JavaScript, которые связаны друг с другом, записанный в файл `.svelte`. Файл `App.svelte` открытый в редакторе кода справа, — это простой компонент.
 
-## Adding data
 
-A component that just renders some static markup isn't very interesting. Let's add some data.
+## Добавление данных
 
-First, add a script tag to your component and declare a `name` variable:
+Компонент, который просто отображает некоторую статическую разметку, не очень интересен. Давайте добавим немного данных.
+
+Сначала добавьте тег скрипта к вашему компоненту и объявите переменную `name` :
 
 ```svelte
 /// file: App.svelte
@@ -19,14 +20,14 @@ First, add a script tag to your component and declare a `name` variable:
 <h1>Hello world!</h1>
 ```
 
-Then, we can refer to `name` in the markup:
+Затем мы можем ссылаться на `name` в разметке:  
 
 ```svelte
 /// file: App.svelte
 <h1>Hello +++{name}+++!</h1>
 ```
 
-Inside the curly braces, we can put any JavaScript we want. Try changing `name` to `name.toUpperCase()` for a shoutier greeting.
+Внутри фигурных скобок мы можем поместить любой JavaScript, который захотим. Попробуйте изменить `name` на `name.toUpperCase()` для более громкого приветствия.
 
 ```svelte
 /// file: App.svelte
