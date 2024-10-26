@@ -1,16 +1,17 @@
 ---
-title: HTML tags
+title: HTML-теги
 ---
 
-Ordinarily, strings are inserted as plain text, meaning that characters like `<` and `>` have no special meaning.
+Обычно строки вставляются как обычный текст, то есть символы вроде `<` и `>` не имеют особого значения.
 
-But sometimes you need to render HTML directly into a component. For example, the words you're reading right now exist in a markdown file that gets included on this page as a blob of HTML.
+Но иногда вам нужно отобразить HTML непосредственно в компоненте. Например, слова, которые вы сейчас читаете, существуют в файле разметки, который включается на эту страницу как фрагмент HTML.
 
-In Svelte, you do this with the special `{@html ...}` tag:
+В Svelte это делается с помощью специального тега `{@html ...}`:
+
 
 ```svelte
 /// file: App.svelte
 <p>{+++@html+++ string}</p>
 ```
 
-> [!NOTE] Important: Svelte doesn't perform any sanitization of the expression inside `{@html ...}` before it gets inserted into the DOM. This isn't an issue if the content is something you trust like an article you wrote yourself. However if it's some untrusted user content, e.g. a comment on an article, then it's critical that you manually escape it, otherwise you risk exposing your users to <a href="https://owasp.org/www-community/attacks/xss/" target="_blank">Cross-Site Scripting</a> (XSS) attacks.
+> [!ЗАМЕЧАНИЕ] Важно: Svelte не выполняет никакой очистки выражения внутри `{@html ...}` перед тем, как оно будет вставлено в DOM. Это не проблема, если контент представляет собой то, чему вы доверяете, например, статью, которую вы написали сами. Однако если это какой-то ненадежный пользовательский контент, например, комментарий к статье, то крайне важно вручную экранировать его, в противном случае вы рискуете подвергнуть своих пользователей атакам <a href="https://owasp.org/www-community/attacks/xss/" target="_blank">Cross-Site Scripting</a> (XSS) attacks.
