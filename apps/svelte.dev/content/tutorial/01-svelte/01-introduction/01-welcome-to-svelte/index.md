@@ -1,30 +1,31 @@
 ---
-title: Welcome to Svelte
+title: Добро пожаловать в Svelte
 ---
 
-Welcome to the Svelte tutorial! This will teach you everything you need to know to easily build web applications of all sizes, with high performance and a small footprint.
+Добро пожаловать в учебник Svelte! Он научит вас всему, что вам нужно знать, чтобы легко создавать веб-приложения любого размера, с высокой производительностью и малыми размерами.
 
-You can also consult the [API docs](https://svelte.dev/docs) and visit the [playground](https://svelte.dev/playground), or — if you're impatient to start hacking on your machine locally — create a project with `npx sv create`.
+Вы также можете ознакомиться [API docs](https://svelte.dev/docs) и посетить [playground](https://svelte.dev/playground), или — если вам не терпится начать хакинг на своей локальной машине — создать проект с помощью `npx sv create`.
 
-## What is Svelte?
+## Что такое Svelte?
 
-Svelte is a tool for building web applications. Like other user interface frameworks, it allows you to build your app _declaratively_ out of components that combine markup, styles and behaviours.
+Svelte — это инструмент для создания веб-приложений. Как и другие фреймворки пользовательского интерфейса, он позволяет вам декларативно создавать приложение из компонентов, которые объединяют разметку, стили и поведение.
 
-These components are _compiled_ into small, efficient JavaScript modules that eliminate overhead traditionally associated with UI frameworks.
+Эти компоненты компилируются в небольшие эффективные модули JavaScript, которые устраняют накладные расходы, традиционно связанные с фреймворками пользовательского интерфейса.
 
-You can build your entire app with Svelte (for example, using an application framework like [SvelteKit](/docs/kit), which this tutorial will cover), or you can add it incrementally to an existing codebase. You can also ship components as standalone packages that work anywhere.
+Вы можете создать все свое приложение с помощью Svelte (например, используя фреймворк приложения, такой как [SvelteKit](/docs/kit), который будет рассмотрен в этом учебнике), или вы можете добавлять его постепенно в существующую кодовую базу. Вы также можете отправлять компоненты как отдельные пакеты, которые работают где угодно. 
 
-## How to use this tutorial
+## Как использовать это руководство
 
-> [!NOTE] You'll need to have basic familiarity with HTML, CSS and JavaScript to understand Svelte.
+> [!ПРИМЕЧАНИЕ] Вам понадобятся базовые знания HTML, CSS и JavaScript, чтобы понять Svelte.
 
-This tutorial is split into four main parts:
 
-- [Basic Svelte](/tutorial/svelte/welcome-to-svelte) (you are here)
-- [Advanced Svelte](/tutorial/svelte/tweens)
-- [Basic SvelteKit](/tutorial/kit/introducing-sveltekit)
-- [Advanced SvelteKit](/tutorial/kit/optional-params)
+Это руководство разделено на четыре основные части:
 
-Each section will present an exercise designed to illustrate a feature. Later exercises build on the knowledge gained in earlier ones, so it's recommended that you go from start to finish. If necessary, you can navigate via the menu above.
+- [Базовый Svelte](/tutorial/svelte/welcome-to-svelte) (вы здесь)
+- [Расширенный Svelte](/tutorial/svelte/tweens)
+- [Базовый SvelteKit](/tutorial/kit/introducing-sveltekit)
+- [Расширенный SvelteKit](/tutorial/kit/optional-params)
 
-If you get stuck, you can click the `solve` button in the top right of the screen. (The `solve` button is disabled on sections like this one that don't include an exercise.) Try not to rely on it too much; you will learn faster by figuring out where to put each suggested code block and manually typing it in to the editor.
+Каждый раздел будет представлять упражнение, разработанное для иллюстрации функции. Последующие упражнения основываются на знаниях, полученных в предыдущих, поэтому рекомендуется проходить их от начала до конца. При необходимости вы можете перемещаться с помощью меню выше.
+
+Если вы застряли, вы можете нажать кнопку решения в правом верхнем углу экрана. (Кнопка решения отключена в разделах, подобных этому, которые не включают упражнения.) Постарайтесь не слишком полагаться на нее; вы научитесь быстрее, выясняя, куда поместить каждый предлагаемый блок кода, и вручную вводя его в редактор.
