@@ -1,8 +1,8 @@
 ---
-title: Styling
+title: Стилизация
 ---
 
-Just like in HTML, you can add a `<style>` tag to your component. Let's add some styles to the `<p>` element:
+Как и в HTML, вы можете добавить тег `<style>` к вашему компоненту. Давайте добавим несколько стилей к элементу `<p>`:
 
 ```svelte
 /// file: App.svelte
@@ -17,4 +17,4 @@ Just like in HTML, you can add a `<style>` tag to your component. Let's add some
 </style>
 ```
 
-Importantly, these rules are _scoped to the component_. You won't accidentally change the style of `<p>` elements elsewhere in your app, as we'll see in the next step.
+Важно, что эти правила _ограничены областью действия компонента_. Вы не сможете случайно изменить стиль элементов `<p>` в другом месте вашего приложения, как мы увидим на следующем шаге.
