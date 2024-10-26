@@ -1,10 +1,11 @@
 ---
-title: Nested components
+title: Вложенные компоненты
 ---
 
-It would be impractical to put your entire app in a single component. Instead, we can import components from other files and include them in our markup.
+Было бы непрактично помещать все ваше приложение в один компонент. Вместо этого мы можем импортировать компоненты из других файлов и включать их в нашу разметку.
 
-Add a `<script>` tag to the top of `App.svelte` that imports `Nested.svelte`...
+Добавьте тег `<script>` в начало `App.svelte`, который импортирует `Nested.svelte`...
+
 
 ```svelte
 /// file: App.svelte
@@ -13,7 +14,7 @@ Add a `<script>` tag to the top of `App.svelte` that imports `Nested.svelte`...
 </script>+++
 ```
 
-...and include a `<Nested />` component:
+...и включить компонент `<Nested />`:
 
 ```svelte
 /// file: App.svelte
@@ -21,6 +22,7 @@ Add a `<script>` tag to the top of `App.svelte` that imports `Nested.svelte`...
 +++<Nested />+++
 ```
 
-Notice that even though `Nested.svelte` has a `<p>` element, the styles from `App.svelte` don't leak in.
+Обратите внимание, что даже несмотря на то, что `Nested.svelte` имеет элемент `<p>`, стили из `App.svelte` не просачиваются.
 
-> [!NOTE] Component names are capitalised, to distinguish them from HTML elements.
+> [!ЗАМЕЧАНИЕ] Имена компонентов пишутся с заглавной буквы, чтобы отличать их от элементов HTML.
+---
